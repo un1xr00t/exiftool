@@ -1,5 +1,8 @@
 ## exiftool.py: Extract Metadata from Various File Formats
 
+![exiftool2](https://github.com/user-attachments/assets/5bf3c133-64c8-42ab-9beb-fba25a8ec02e)
+
+
 This Python script, `exiftool.py`, assists in extracting metadata from various file formats, including:
 
 * **Images:** JPG, JPEG, PNG, TIFF, GIF
