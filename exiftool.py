@@ -43,5 +43,5 @@ def extract_metadata(file_path):
         print(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
-    file_path = input("Enter the file path (supported formats: JPG, JPEG, PNG, TIFF, GIF, MP3, WAV, FLAC): ").strip("'")
+    file_path = input("Enter the file path (supported formats:\n JPG, JPEG, PNG, TIFF, GIF, MP3, WAV, FLAC): ").strip("'")
     extract_metadata(file_path)
