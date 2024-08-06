@@ -24,7 +24,7 @@ This Python script, `exiftool.py`, assists in extracting metadata from various f
 
 3. **Run the script:**
    ```bash
-   python exiftool.py```
+   python exiftool.py
 
 4. Enter the file path:
 The script will prompt you for the file path. Ensure the file is accessible and supported by the script.
