@@ -3,6 +3,10 @@ import exifread
 import mutagen
 from PIL import Image
 
+def print_blue(text):
+    """Prints text in blue color using ANSI escape codes."""
+    print("\033[94m" + text + "\033[0m")
+
 def extract_metadata(file_path):
     try:
         # Determine file type based on extension
@@ -43,5 +47,14 @@ def extract_metadata(file_path):
         print(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
+    print_blue(r"""
+  ___     _  __   ___     _               _           
+ | __|_ _(_)/ _| | __|_ _| |_ _ _ __ _ __| |_ ___ _ _ 
+ | _|\ \ / |  _| | _|\ \ /  _| '_/ _` / _|  _/ _ \ '_|
+ |___/_\_\_|_|   |___/_\_\\__|_| \__,_\__|\__\___/_|  
+                                                      """)
+
+    print_blue("Created by un1xr00t")
+
     file_path = input("Enter the file path (supported formats:\n JPG, JPEG, PNG, TIFF, GIF, MP3, WAV, FLAC): ").strip("'")
     extract_metadata(file_path)
